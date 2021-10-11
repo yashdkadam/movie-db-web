@@ -73,6 +73,9 @@
     <div id="mydiv"></div>
     <script>
         function querySearch(query) {
+            if(query === ''){
+                return;
+            }
             for (let j = 0; j <= 19; j++) {
                 var myobj = document.getElementById(`${j}`);
                 myobj.remove();
